@@ -24,7 +24,7 @@ public class Main {
     // Runs the linear search on the array
     final Optional<Integer> index1 = Search.findTeamPosition(array, key);
     checkTeamArrayIndex(array, index1);
-    
+
     // Runs the linear search on the list
     final Optional<Integer> index2 = Search.findTeamPosition(list, key);
     checkTeamListIndex(list, index2);
@@ -34,7 +34,7 @@ public class Main {
     final String fundingString = keyboard.nextLine();
     final int funding = Integer.parseInt(fundingString);
     System.out.println("Looking for min funding " + funding);
-  
+
     // Runs the linear search on the array
     final Optional<Integer> index3 = Search.findTeamMinFunding(array, funding);
     checkTeamArrayIndex(array, index3);
@@ -43,7 +43,7 @@ public class Main {
     final Optional<Integer> index4 = Search.findTeamMinFundingFast(array, funding);
     checkTeamArrayIndex(array, index4);
   }
-  
+
   static void checkTeamArrayIndex(final Team[] array, final Optional<Integer> index) {
     // Checks the index
     if (index.isPresent()) {

@@ -17,7 +17,7 @@ public class Search {
         return Optional.of(i);
       }
     }
-    // If it does not exist in the array then return an index of -1
+    // If it does not exist in the array then return an empty Optional
     return Optional.empty();
   }
 
@@ -26,8 +26,8 @@ public class Search {
     // TODO complete this method
     return Optional.empty();
   }
-  
-  /** 
+
+  /**
    * Looks for the position of the poorest team that has at least 
    * the specified funding level.
    * @pre arr is sorted
@@ -37,8 +37,8 @@ public class Search {
     // TODO complete this method
     return Optional.empty();
   }
-  
-  /** 
+
+  /**
    * Looks for the position of the poorest team that has at least 
    * the specified funding level. 
    * Uses binary search: Initially search the entire array, 
