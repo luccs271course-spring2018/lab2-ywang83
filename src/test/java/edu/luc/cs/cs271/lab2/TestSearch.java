@@ -1,10 +1,12 @@
 package edu.luc.cs.cs271.lab2;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class TestSearch {
-  
+
   Team[] makeArrayFixture(final int size) {
     final Team[] array = new Team[size];
     for (int i = 0; i < size; i++) {
@@ -33,9 +35,9 @@ public class TestSearch {
     final Team[] arr = makeArrayFixture(10);
     assertFalse(Search.findTeamPosition(arr, "Team 11").isPresent());
   }
-  
+
   // TODO: testFindPositionList0, 10s, 10f
-  
+
   // TODO: testFindMinFundingArray for several sizes and scenarios
 
   // TODO: testFindMinFundingArrayFast for several sizes and scenarios
