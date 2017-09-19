@@ -54,7 +54,7 @@ public class TestSearch {
     final List<Team> list = makeListFixture(0);
     assertFalse(Search.findTeamPosition(list, "Team 5").isPresent());
   }
-  
+
   @Test
   public void testFindPositionList10s() {
     final List<Team> list = makeListFixture(10);
