@@ -27,7 +27,8 @@ public class TestSearch {
     size = list.size();
     for (int i =0; i < size; i++) {
         final String s = Integer.toString(i);
-        list.get(i).equals(new Team("Team " + s, "Coach " + s, i * 100 + 50));
+        //list.get(i).equals(new Team("Team " + s, "Coach " + s, i * 100 + 50));
+        list.add(i, new Team("Team " + s, "Coach " + s, i * 100 + 50));
     }
     return list;
   }
