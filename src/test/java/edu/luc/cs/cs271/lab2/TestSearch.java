@@ -3,6 +3,7 @@ package edu.luc.cs.cs271.lab2;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertFalse;
@@ -21,11 +22,12 @@ public class TestSearch {
 
   // TODO makeListFixture
 
-  List<Team> makeListFixture(final int size) {
-    final List<Team> list = new ArrayList<>(size);
-    for (int i = 0; i < size; i++) {
-      final String s = Integer.toString(i);
-      list.get(i).equals( new Team("Team " + s, "Coach " + s, i * 100 + 50));
+  List<Team> makeListFixture(int size) {
+    final List<Team> list = new ArrayList<>();
+    size = list.size();
+    for (int i =0; i < size; i++) {
+        final String s = Integer.toString(i);
+        list.get(i).equals(new Team("Team " + s, "Coach " + s, i * 100 + 50));
     }
     return list;
   }
