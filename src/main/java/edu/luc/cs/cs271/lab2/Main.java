@@ -20,6 +20,7 @@ public class Main {
     System.out.print("Enter name to search: ");
     final String key = keyboard.nextLine();
     System.out.println("Looking for team " + key);
+    System.out.println("  ");
 
     // Runs the linear search on the array
     final Optional<Integer> index1 = Search.findTeamPosition(array, key);
@@ -34,6 +35,7 @@ public class Main {
     final String fundingString = keyboard.nextLine();
     final int funding = Integer.parseInt(fundingString);
     System.out.println("Looking for min funding " + funding);
+    System.out.println("  ");
 
     // Runs the linear search on the array
     final Optional<Integer> index3 = Search.findTeamMinFunding(array, funding);
@@ -50,6 +52,7 @@ public class Main {
     System.out.println("Funding: " + team.getFunding());
     System.out.println("Array index: " + pos);
     System.out.println("Ranking: " + (pos + 1));;
+    System.out.println("  ");
   }
 
   static void checkTeamArrayIndex(final Team[] array, final Optional<Integer> index) {
@@ -75,6 +78,7 @@ public class Main {
       Print(team, pos);
     } else {
       System.out.println("Not Found!");
+      System.out.println("  ");
     }
   }
 }

@@ -86,7 +86,7 @@ public class TestSearch {
   @Test
   public void testFindMinFundingArray10f() {
     final Team[] arr = makeArrayFixture(10);
-    assertFalse(Search.findTeamMinFunding(arr, 0).isPresent());
+    assertFalse(Search.findTeamMinFunding(arr, 1200).isPresent());
   }
 
   // TODO: testFindMinFundingArrayFast for several sizes and scenarios
@@ -106,6 +106,6 @@ public class TestSearch {
   @Test
   public void testFindMinFundingArrayFast10f() {
     final Team[] arr = makeArrayFixture(10);
-    assertFalse(Search.findTeamMinFundingFast(arr, 150).isPresent());
+    assertFalse(Search.findTeamMinFundingFast(arr, 1200).isPresent());
   }
 }
