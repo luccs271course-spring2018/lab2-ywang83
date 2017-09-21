@@ -22,14 +22,13 @@ public class TestSearch {
 
   // TODO makeListFixture
 
-  List<Team> makeListFixture(int size) {
-    final List<Team> list = new ArrayList<>();
-    size = list.size();
-    for (int i =0; i < size; i++) {
-        final String s = Integer.toString(i);
-        //list.get(i).equals(new Team("Team " + s, "Coach " + s, i * 100 + 50));
-        list.add(i, new Team("Team " + s, "Coach " + s, i * 100 + 50));
+  List<Team> makeListFixture(final int size) {
+    final Team[] array = new Team[size];
+    for (int i = 0; i < size; i++) {
+      final String s = Integer.toString(i);
+      array[i] = new Team("Team " + s, "Coach " + s, i * 100 + 50);
     }
+    final List<Team> list = Arrays.asList(array);
     return list;
   }
 
@@ -107,6 +106,6 @@ public class TestSearch {
   @Test
   public void testFindMinFundingArrayFast10f() {
     final Team[] arr = makeArrayFixture(10);
-    assertFalse(Search.findTeamMinFundingFast(arr, 200).isPresent());
+    assertFalse(Search.findTeamMinFundingFast(arr, 0).isPresent());
   }
 }
