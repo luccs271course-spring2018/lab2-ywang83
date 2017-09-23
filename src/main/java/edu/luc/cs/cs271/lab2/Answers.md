@@ -33,6 +33,9 @@ By doing so, it will trow `Exception` before method executive. when set the para
 However, when I removed the validity checking constructors, even if the parameters are set empty,  class `main` still runs as usual, and return different answers.
  
 ## What is the purpose of using the keyword `final`with variables and arguments?
+The purpose of using the keyword `final` is to declare the value of variables and arguments are constant and could not be altered. When you try to redefine a `final` varialble, in Intellij, it will remind you with red underlines and right cursor hint like `Cannot assign a value to final variable "size"`. <br />
+
+On the other hand, by doing so could optimize the program for faster performance, since everytime using `final` variales, it will use the value of the varialble directly.
 
 
 ## What are alternatives to using `Optional` and how do they compare?
