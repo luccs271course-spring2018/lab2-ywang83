@@ -1,13 +1,13 @@
 # Questions & Answers
 
 ## What is the complexity of each of the four search methods in terms of array or list size n?
-- findTeamPosition for array - `Optional<Integer> findTeamPosition(final Team[] arr, final String key)`
+- `findTeamPosition` for array -  O(n), best: O(1), worst: O(n)
   
-- findTeamPosition for List - `Optional<Integer> findTeamPosition(final List<Team> list, final String key)`
+- `findTeamPosition` for List -  O(n), best: O(1), worst: O(n)
 
-- findTeamMinFunding (linear search) - `Optional<Integer> findTeamMinFunding(final Team[] arr, final int minFunding)`
+- `findTeamMinFunding` (linear search) - O(n), best: O(1), worst: O(n)
 
-- findTeamMinFundingFast (binary search) - `Optional<Integer> findTeamMinFundingFast(final Team[] arr, final int minFunding)`
+- `findTeamMinFundingFast` (binary search) -O(log(n)), best:O(1), worst: O(log(n))
 
 ## What happens in the case of binary search if the array is not sorted?
   I tried switching t2 and t3 in the array, and here is what happened. Array element with funding of 600 could not be found. Elements with 500 and 700 are still the same. <br /> 
