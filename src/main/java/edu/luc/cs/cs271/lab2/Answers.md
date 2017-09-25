@@ -30,12 +30,12 @@ By doing so, it will trow `Exception` before method executive. when set the para
 `Exception in thread "main" java.lang.IllegalArgumentException: name is null` <br />
 `Exception in thread "main" java.lang.NumberFormatException: funding is 0` <br />
 
-However, when I removed the validity checking constructors, even if the parameters are set empty,  class `main` still runs as usual, and return different answers.
+However, when I removed the validity checking constructors, even if the parameters are set empty,  class `main` still runs as usual, and return answers maybe unwanted.
 
 ## What is the purpose of using the keyword `final`with variables and arguments?
-The purpose of using the keyword `final` is to declare the value of variables and arguments are constant and could not be altered. When you try to redefine a `final` varialble, in Intellij, it will remind you with red underlines and right cursor hint like `Cannot assign a value to final variable "size"`. <br />
+The purpose of using the keyword `final` is to declare the value of variables and arguments are constant and could not be altered. When I try to redefine a `final` varialble, in Intellij, it will remind me with red underlines and right cursor hint like `Cannot assign a value to final variable "size"`. <br />
 
-On the other hand, by doing so could optimize the program for faster performance, since everytime using `final` variales, it will use the value of the varialble directly.
+On the other hand, by doing so could optimize the program for better performance, since everytime using `final` variales, it will use the value of the varialble directly.
 
 ## What are alternatives to using `Optional` and how do they compare?
 `Optional<Integer>` could be replaced by `int`. <br />
@@ -43,3 +43,7 @@ On the other hand, by doing so could optimize the program for faster performance
 `Optional.empty()` could be replaced by `-1`. <br />
 
 The main difference between the two is when using the integer objects of `int`, the integer could be used directly, while using `Optional`, it needs special methods like `isPresent()`, `get()`, and etc.
+
+For example:
+`final int pos = index.get();` - with `Optional` method
+`final int pos = index;` - with `int i`
