@@ -1,16 +1,16 @@
 # Questions & Answers
 
 ## What is the complexity of each of the four search methods in terms of array or list size n?
-- `findTeamPosition` for array -  O(n), best: O(1), worst: O(n)
+- Complexity of `findTeamPosition` for array -  O(n), best: O(1), worst: O(n)
   
-- `findTeamPosition` for List -  O(n), best: O(1), worst: O(n)
+- Complexity of `findTeamPosition` for List -  O(n), best: O(1), worst: O(n)
 
-- `findTeamMinFunding` (linear search) - O(n), best: O(1), worst: O(n)
+- Complexity of `findTeamMinFunding` (linear search) - O(n), best: O(1), worst: O(n)
 
-- `findTeamMinFundingFast` (binary search) -O(log(n)), best:O(1), worst: O(log(n))
+- Complexity of `findTeamMinFundingFast` (binary search) -O(log(n)), best:O(1), worst: O(log(n))
 
 ## What happens in the case of binary search if the array is not sorted?
-  I tried switching t2 and t3 in the array, and here is what happened. Array element with funding of 600 could not be found. Elements with 500 and 700 are still the same. <br /> 
+  I tried switching t2 and t3 in the array, and here is what happened. Array element with middle funding number of 600 could not be found properly. Elements with 500 and 700 are still the same. <br /> 
   
   `Main` runs like following when search for min funding of 600: <br />
   
