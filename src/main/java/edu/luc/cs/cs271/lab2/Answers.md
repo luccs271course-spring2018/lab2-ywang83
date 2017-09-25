@@ -45,5 +45,5 @@ On the other hand, by doing so could optimize the program for better performance
 The main difference between the two is when using the integer objects of `int`, the integer could be used directly, while using `Optional`, it needs special methods like `isPresent()`, `get()`, and etc.
 
 For example:
-`final int pos = index.get();` - with `Optional` method
+`final int pos = index.get();` - with `Optional` method <br />
 `final int pos = index;` - with `int i`
